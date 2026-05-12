@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos getElementById</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <h1>Exemplos document.getElementById</h1>
+
+    <section>
+        <h2>Exemplo Pessoa</h2>
+
+        <div class="form-group">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome">
+        </div>
+
+        <div class="form-group">
+            <label for="sobrenome">Sobrenome</label>
+            <input type="text" id="sobrenome">
+        </div>
+
+        <button onclick="concatenar()">Concatenar</button>
+    </section>
+
+    <section>
+        <h2>Exemplo Matemático</h2>
+
+        <div class="form-group">
+            <label for="numero1">Número</label>
+            <input type="number" id="numero1">
+        </div>
+
+        <button onclick="verificarPar()">É par?</button>
+    </section>
+
+    <section>
+        <h2>Exemplo Formulário</h2>
+
+        <div class="form-group">
+            <label for="cliente">Cliente</label>
+            <input type="text" id="cliente">
+        </div>
+
+        <div class="form-group">
+            <label for="quantidade-licencas">Quantidade de Licenças</label>
+            <input type="range" id="quantidade-licencas" min="1" max="100">
+        </div>
+
+        <div class="form-group">
+            <span>Tipo</span>
+
+            <div class="radio-group">
+                <div class="radio-option">
+                    <input type="radio" id="tipo-erp" name="tipo" value="ERP">
+                    <label for="tipo-erp">ERP</label>
+                </div>
+
+                <div class="radio-option">
+                    <input type="radio" id="tipo-hospital" name="tipo" value="Hospital">
+                    <label for="tipo-hospital">Hospital</label>
+                </div>
+
+                <div class="radio-option">
+                    <input type="radio" id="tipo-oficina" name="tipo" value="Oficina">
+                    <label for="tipo-oficina">Oficina</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="plano">Plano</label>
+            <select id="plano">
+                <option selected disabled>Selecione um plano</option>
+                <option value="Básico">Básico</option>
+                <option value="Intermediário">Intermediário</option>
+                <option value="Avançado">Avançado</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="data-encerramento-contrato">Data de Encerramento do Contrato</label>
+            <input type="date" id="data-encerramento-contrato" min="2026-05-11">
+        </div>
+
+        <div class="form-group checkbox-option">
+            <input type="checkbox" id="backup">
+            <label for="backup">Backup</label>
+        </div>
+
+        <button onclick="processarPedido()">Processar pedido</button>
+
+        <div class="form-group">
+            <label for="resultado">Resultado</label>
+            <textarea id="resultado" disabled readonly></textarea>
+        </div>
+    </section>
+
+    <script src="assets/js/exemplo-01-seletores.js"></script>
+</body>
+
+</html>
