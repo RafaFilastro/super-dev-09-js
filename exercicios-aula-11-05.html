@@ -1,23 +1,151 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercicio aula 11/05</title>
+
+    <link rel="stylesheet" href="assets/css/style-exercicio-aula-11-05.css">
 </head>
 <body>
-    <div>
+
+    <div class="container">
+
+        <h1>Exercícios JavaScript</h1>
+
         <label for="numero1">Número 01</label>
         <input type="number" id="numero1">
-        <br>
+
         <label for="numero2">Número 02</label>
         <input type="number" id="numero2">
-        <br>
-        <button onclick="exercicio01CompararDoisNumeros()">Comparar Números</button>
+
+        <button onclick="exercicio01CompararDoisNumeros()">
+            Comparar Números
+        </button>
+
+        <label for="nome">Nome</label>
+        <input type="text" id="nome">
+
+        <label for="idade">Idade</label>
+        <input type="number" id="idade">
+
+        <button onclick="exercicio02ClassificarIdade()">
+            Classificar Idade
+        </button>
+
+        <label for="nota1">Nota 1</label>
+        <input type="number" id="nota1" step="0.01" min="0" max="10">
+
+        <label for="nota2">Nota 2</label>
+        <input type="number" id="nota2" step="0.01" min="0" max="10">
+
+        <label for="nota3">Nota 3</label>
+        <input type="number" id="nota3" step="0.01" min="0" max="10">
+
+        <button onclick="exercicio03CalcularMediaEscolar()">
+            Calcular Média
+        </button>
+
+        <label for="produto">Produto</label>
+        <input type="text" id="produto">
+
+        <label for="preco">Preço</label>
+        <input type="number" id="preco" step="0.01" min="0">
+
+        <label for="desconto">Desconto (%)</label>
+        <input type="number" id="desconto" step="0.01" min="0" max="100">
+
+        <button onclick="exercicio04CalcularDescontoProduto()">
+            Calcular Desconto
+        </button>
+
+        <label for="funcionario">Funcionário</label>
+        <input type="text" id="funcionario">
+
+        <label for="salario">Salário</label>
+        <input type="number" id="salario" step="0.01" min="0">
+
+        <label for="cargo">Cargo</label>
+        <select id="cargo">
+            <option value="">Selecione</option>
+            <option value="gerente">Gerente</option>
+            <option value="analista">Analista</option>
+            <option value="desenvolvedor">Desenvolvedor</option>
+        </select>
+
+        <button onclick="exercicio05SimularSalario()">
+            Simular Salário
+        </button>
+
+        <label for="responsavel">Responsável</label>
+        <input type="text" id="responsavel">
+
+        <label for="convidados">Quantidade de Convidados</label>
+        <input type="number" id="convidados" min="1">
+
+        <label for="evento">Tipo de Evento</label>
+        <select id="evento">
+            <option value="">Selecione</option>
+            <option value="casamento">Casamento</option>
+            <option value="aniversario">Aniversário</option>
+            <option value="corporativo">Corporativo</option>
+        </select>
+
+        <label>Pacote</label>
+
+        <div class="radio-group">
+            <label>
+                <input type="radio" name="pacote" value="basico">
+                Básico
+            </label>
+
+            <label>
+                <input type="radio" name="pacote" value="intermediario">
+                Intermediário
+            </label>
+
+            <label>
+                <input type="radio" name="pacote" value="avancado">
+                Avançado
+            </label>
+        </div>
+
+        <label for="data">Data do Evento</label>
+        <input type="date" id="data">
+
+        <div class="checkbox-group">
+
+            <label>
+                <input type="checkbox" id="decoracao">
+                Decoração Especial
+            </label>
+
+            <label>
+                <input type="checkbox" id="fotografia">
+                Fotografia
+            </label>
+
+            <label>
+                <input type="checkbox" id="musica">
+                Música
+            </label>
+
+        </div>
+
+        <button onclick="exercicio10GerarOrcamentoEvento()">
+            Gerar Orçamento
+        </button>
+
+        <textarea
+            id="resultado"
+            rows="10"
+            readonly
+            placeholder="O orçamento do evento aparecerá aqui."
+        ></textarea>
+
     </div>
 
-
-
     <script src="assets/js/exercicio-aula-11-05.js"></script>
+
 </body>
 </html>
