@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Estilização</title>
+        <link rel="stylesheet" href="assets/css/exemplo-02-estilizacao.css" />
+    </head>
+    <body>
+        <button
+            onclick="alternarVisibilidadeBotao()"
+            id="botao-alternar-visibilidade"
+        >
+            Apresentar Caixa
+        </button>
+        <button onclick="definirCorVermelho()">Cor Vermelha</button>
+        <button onclick="definirCorAzul()">Cor Azul</button>
+        <button onclick="redefinirCor()">Redefinir Cor</button>
+        <button onclick="arcoIris()">Arco Iris</button>
+
+        <div id="caixa-01">Caixa 01</div>
+
+        <h3>Dados da pessoa</h3>
+        <div>
+            <label for="campo-nome">Nome</label>
+            <input type="text" id="campo-nome" />
+        </div>
+        <div>
+            <input
+                type="radio"
+                id="campo-tipo-pf"
+                name="campo-tipo"
+                value="pf"
+                onchange="apresentarCamposPessoaFisica()"
+            />
+            <label for="campo-tipo-pf">PF</label>
+            <input
+                type="radio"
+                id="campo-tipo-pj"
+                name="campo-tipo"
+                value="pj"
+                onchange="apresentarCamposPessoaJuridica()"
+            />
+            <label for="campo-tipo-pj">PJ</label>
+        </div>
+        <!--
+    visibility: hidden; // Oculta o elemento visualmente, mas ele ainda ocupa espaço no layout da página.
+    display: none; // Remove completamente o elemento do layout, como se ele não existisse. 
+    -->
+        <div id="campos-pf" class="hidden">
+            <label for="campo-cpf">CPF</label>
+            <input type="text" id="campo-cpf" />
+        </div>
+        <div id="campos-pj" class="hidden">
+            <label for="campo-cnpj">CNPJ</label>
+            <input type="text" id="campo-cnpj" />
+        </div>
+
+        <h3>Digitar para apresentar gif</h3>
+        <div>
+            <label for="campo-pesquisa">Pesquisa</label>
+            <input
+                type="text"
+                id="campo-pesquisa"
+                onkeyup="alterarImagem(event)"
+            />
+        </div>
+        <div class="imagem"></div>
+
+        <script src="assets/js/exemplo-02-estilizacao.js"></script>
+    </body>
+</html>
