@@ -1,0 +1,62 @@
+/*Exercicio 01*/
+.caixa{
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+    border: 2px solid black;
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+}
+
+.vermelho{
+    background-color: red;
+}
+
+.azul{
+    background-color: blue;
+}
+
+.verde{
+    background-color: green;
+}
+
+.grande{
+    width: 200px;
+    height: 200px;
+}
+/*Exercicio 02*/
+.card{
+    width: 250px;
+    padding: 20px;
+    border: 2px solid black;
+    text-align: center;
+
+    display: none;
+}
+
+.card img{
+    width: 100px;
+    height: 100px;
+}
+
+.tema-azul{
+    background-color: blue;
+    color: white;
+}
+
+.tema-verde{
+    background-color: green;
+    color: black;
+}
+
+.tema-vermelho{
+    background-color: red;
+    color: black;
+}
+
+.destaque{
+    border: 6px solid gold;
+    transform: scale(1.05);
+    border-radius: 10px;
+}

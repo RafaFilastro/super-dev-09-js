@@ -66,8 +66,8 @@ textarea:focus {
     box-shadow: 0 0 0 2px rgba(56, 189, 248, 0.25);
 }
 
-input[type="radio"],
-input[type="checkbox"] {
+input[type='radio'],
+input[type='checkbox'] {
     width: auto;
     margin-right: 8px;
 }
@@ -113,7 +113,7 @@ textarea {
     resize: vertical;
 }
 
-input[type="range"] {
+input[type='range'] {
     padding: 0;
 }
 
