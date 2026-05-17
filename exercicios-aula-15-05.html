@@ -1,39 +1,50 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Exercicios Aula 15/05</title>
+        <title>Exercícios Aula 15/05</title>
         <link rel="stylesheet" href="assets/css/exercicio-aula-15-05.css" />
     </head>
     <body>
-        <h1>Exercicio 01</h1>
-        <h2>Destaque de Produto</h2>
-        <div id="caixa" class="caixa">
-            <p>Iphone 17pro max 1 tb</p>
-        </div>
-        <button onclick="mudarCor('vermelho')">Vermelho</button>
-        <button onclick="mudarCor('azul')">Azul</button>
-        <button onclick="mudarCor('verde')">Verde</button>
-        <button onclick="aumentarCaixa()">Aumentar</button>
-        <button onclick="resetarCaixa()">Redefinir</button>
+        <h1>Exercício 01</h1>
 
-        <h1>Exercicio 02</h1>
+        <h2>Destaque de Produto</h2>
+
+        <div id="caixa" class="caixa">
+            <p>Iphone 17 Pro Max 1 TB</p>
+        </div>
+
+        <div class="botoes">
+            <button onclick="mudarCor('vermelho')">Vermelho</button>
+            <button onclick="mudarCor('azul')">Azul</button>
+            <button onclick="mudarCor('verde')">Verde</button>
+            <button onclick="aumentarCaixa()">Aumentar</button>
+            <button onclick="resetarCaixa()">Redefinir</button>
+        </div>
+
+        <h1>Exercício 02</h1>
+
         <h2>Perfil de Usuário</h2>
-        <input type="text" id="nome" placeholder="Digite seu nome" />
-        <select id="tema">
-            <option value="tema-azul">Tema Azul</option>
-            <option value="tema-verde">Tema Verde</option>
-            <option value="tema-vermelho">Tema Vermelho</option>
-        </select>
-        <label>
-            <input type="checkbox" id="destaque" />
-            Modo destaque
-        </label>
-        <br /><br />
-        <button onclick="aplicarAlteracoes()">Aplicar Alterações</button>
-        <br /><br />
-        <div id="card" class="card">
+
+        <div class="formulario">
+            <input type="text" id="nome" placeholder="Digite seu nome" />
+
+            <select id="tema">
+                <option value="tema-azul">Tema Azul</option>
+                <option value="tema-verde">Tema Verde</option>
+                <option value="tema-vermelho">Tema Vermelho</option>
+            </select>
+
+            <label>
+                <input type="checkbox" id="destaque" />
+                Modo destaque
+            </label>
+
+            <button onclick="aplicarAlteracoes()">Aplicar Alterações</button>
+        </div>
+
+        <div id="card" class="card" style="display: none;">
             <img
                 src="https://s2-techtudo.glbimg.com/cEZr7x8qU-uBuk6a7pGLiMcj-a8=/0x0:695x496/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2021/z/8/AM4aWnQ8aBOIJHmDbgFg/2015-04-01-ha-ha-nelson-simpsons-1.jpg"
                 alt="Foto Perfil"
@@ -41,24 +52,90 @@
             <h2 id="nome-card">Nome do Usuário</h2>
         </div>
 
-        <h1>Exercicio 03</h1>
-        <h2>Pagina de cadastro</h2>
-        <div>
-            <input type="text" id="nome" placeholder="Digite seu nome" />
+        <h1>Exercício 03</h1>
+
+        <h2>Formulário de Contato</h2>
+
+        <div class="formulario">
+            <label>Tipo de contato:</label>
+
+            <label>
+                <input
+                    type="radio"
+                    name="tipo"
+                    value="pessoal"
+                    onchange="mostrarCampos()"
+                />
+                Pessoal
+            </label>
+
+            <label>
+                <input
+                    type="radio"
+                    name="tipo"
+                    value="comercial"
+                    onchange="mostrarCampos()"
+                />
+                Comercial
+            </label>
         </div>
-        <div>Selecione o Cadastro</div>
-        <div class="selecao">
-            <input
-                type="radio"
-                id="pf"
-                name="tipo"
-                value="pf"
-                onchange="apresentarDadosPessoaFisica()"
-            />
-            <label for="pf">Pessoa Física</label>
-            <input type="radio" id="pj" name="tipo" value="pj" />
-            <label for="pj">Pessoa Jurídica</label>
+
+        <div id="campos-pessoais" class="dados" style="display: none;">
+            <h3>Contato Pessoal</h3>
+
+            <label for="nome-pessoal">Nome:</label>
+            <input type="text" id="nome-pessoal" />
+
+            <label for="email-pessoal">Email:</label>
+            <input type="email" id="email-pessoal" />
+
+            <label for="cpf">CPF:</label>
+            <input type="text" id="cpf" />
         </div>
+
+        <div id="campos-comerciais" class="dados" style="display: none;">
+            <h3>Contato Comercial</h3>
+
+            <label for="empresa">Nome da Empresa:</label>
+            <input type="text" id="empresa" />
+
+            <label for="email-comercial">Email Comercial:</label>
+            <input type="email" id="email-comercial" />
+
+            <label for="cnpj">CNPJ:</label>
+            <input type="text" id="cnpj" />
+        </div>
+
+        <button onclick="apresentarResumo()">Apresentar Resumo</button>
+
+        <label for="resultado" class="resultado">Resumo do cadastro:</label>
+        <textarea id="resultado" rows="8" cols="40" readonly></textarea>
+        <h1>Exercício 04</h1>
+
+    <h2>Pesquisa com Imagem</h2>
+
+    <div class="formulario">
+    <input type="text" id="pesquisa" placeholder="Digite: carro, moto ou casa" />
+    <button onclick="pesquisarImagem()">Pesquisar</button>
+    <button onclick="limparPesquisa()">Limpar</button>
+    </div>
+
+    <div id="area-imagem" class="area-imagem">
+    <img id="imagem-pesquisa" src="" alt="" />
+    </div>
+
+    <p id="legenda">Nenhuma pesquisa realizada.</p>
+
+    <h1>Exercício 05</h1>
+
+    <h2>Animação de Banner</h2>
+
+    <div id="banner" class="banner">
+        <p id="texto-banner">Promoção especial!</p>
+    </div>
+
+    <button onclick="iniciarAnimacao()">Iniciar Animação</button>
+    <button onclick="pararAnimacao()">Parar</button>
 
         <script src="assets/js/exercicio-aula-15-05.js"></script>
     </body>
