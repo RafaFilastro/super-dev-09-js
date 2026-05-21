@@ -1,0 +1,161 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    padding: 30px;
+}
+
+h1 {
+    color: #111827;
+    text-align: center;
+}
+
+.placar {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.time {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.time-azul {
+    border-top: 8px solid #2563eb;
+}
+
+.time-vermelho {
+    border-top: 8px solid #dc2626;
+}
+
+.time h2 {
+    margin-top: 0;
+    color: #111827;
+}
+
+.pontos {
+    font-size: 60px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.pontos-azul {
+    color: #2563eb;
+}
+
+.pontos-vermelho {
+    color: #dc2626;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.botao-azul {
+    background-color: #2563eb;
+}
+
+.botao-azul:hover {
+    background-color: #1d4ed8;
+}
+
+.botao-vermelho {
+    background-color: #dc2626;
+}
+
+.botao-vermelho:hover {
+    background-color: #b91c1c;
+}
+
+.botao-resetar {
+    background-color: #111827;
+    display: block;
+    margin: 25px auto 10px auto;
+}
+
+.botao-resetar:hover {
+    background-color: #374151;
+}
+
+.botao-finalizar {
+    background-color: #16a34a;
+    display: block;
+    margin: 10px auto;
+}
+
+.botao-finalizar:hover {
+    background-color: #15803d;
+}
+
+.resultado-partida {
+    max-width: 700px;
+    margin: 25px auto;
+}
+
+.card-status {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    border-left: 8px solid #111827;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.card-status h2 {
+    margin-top: 0;
+    color: #111827;
+}
+
+.card-status p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #374151;
+}
+
+.partidas {
+    max-width: 700px;
+    margin: 30px auto;
+    display: grid;
+    gap: 15px;
+}
+
+.titulo-historico {
+    text-align: center;
+    color: #111827;
+    margin-top: 40px;
+}
+
+.card-partida {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    border-left: 8px solid #2563eb;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.card-partida h3 {
+    margin-top: 0;
+    color: #111827;
+}
+
+.card-partida p {
+    color: #374151;
+    font-weight: bold;
+    margin: 8px 0;
+}
+
+@media (max-width: 700px) {
+    .placar {
+        grid-template-columns: 1fr;
+    }
+}

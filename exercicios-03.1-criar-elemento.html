@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/exemplo-03.1-criar-elementos.css">
+</head>
+<body>
+    <h1>Placar</h1>
+
+    <div class="placar">
+        <div class="time time-azul">
+            <h2>Time Brasil</h2>
+            <div id="pontos-azul" class="pontos pontos-azul">0</div>
+
+            <button class="botao-azul" onclick="adicionarPontoAzul()">Noooooooo!</button>
+        </div>
+
+        <div class="time time-vermelho">
+            <h2>Time Alemanha</h2>
+            <div id="pontos-vermelho" class="pontos pontos-vermelho">0</div>
+
+            <button class="botao-vermelho" onclick="adicionarPontoVermelho()">Noooooooo!</button>
+        </div>
+    </div>
+
+    <button class="botao-resetar" onclick="resetarJogo()">Resetar Jogo</button>
+
+    <button class="botao-finalizar" onclick="finalizar()">Finalizar jogo</button>
+
+    <div class="resultado-partida"></div>
+
+    <h2 class="titulo-historico">Histórico de partidas</h2>
+
+    <div class="partidas"></div>
+
+    <script src="assets/js/exemplo-03.1-criar-elementos.js"></script>
+</body>
+</html>
