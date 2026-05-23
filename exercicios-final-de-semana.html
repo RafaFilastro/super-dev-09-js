@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios final de semana</title>
+</head>
+<link rel="stylesheet" href="assets/css/exercicios-final-de-semana.css">
+<body>
+    <h2>Restaurante Exercício 01</h2>
+    <div class="nome-prato">
+        <label for="text">Nome do prato</label>
+        <input type="text" id="nome" placeholder="Digite o nome do prato">
+    </div>
+    <div class="preco-prato">
+        <label for="text">Valor do prato</label>
+        <input type="number" id="preco" placeholder="Digite o preço do prato">
+    </div>
+    <div class="selecione-prato">
+        <label for="text">Selecione a categoria</label>
+        <select id="selecao">
+            <option value="" selected disabled></option>
+            <option value="lanche">Lanche</option>
+            <option value="bebida">Bebida</option>
+            <option value="sobremesa">Sobremesa</option>
+        </select>
+    </div>
+    <button onclick="adcionarNoCardapio()">Adcionar no cardapio</button>
+    <div class="cardapio-pronto"></div>
+    <br><br>
+
+
+    <!-- ----------------------------------------------------------------------------------------- -->
+    <h2>Mural de Recados Exercicio 02</h2>
+    <div class="nome-pessoa-digitado">
+        <label for="text">Nome</label>
+        <input type="text" id="pessoa" placeholder="Digite o seu nome">
+    </div>
+    <div class="campo-texto">
+        <label for="mensagem">Deixe seu Recado</label>
+        <textarea id="mensagem" name="mensagem" rows="4" cols="50" placeholder="Digite a sua mensagem aqui"></textarea>
+    </div>
+    <button onclick="publicarMensagem()">Publicar Mensagem</button>
+
+    <div class="publicadas"></div>
+
+    <!-- -----------------------------------------------------------------------------------------  -->
+    <h2>Controle de biblioteca Exercicio 03</h2>
+    <div class="nome-livro">
+        <label for="text">Nome do Livro</label>
+        <input type="text" id="livro" placeholder="Digite o nome do livro">
+    </div>
+    <div class="nome-autor">
+        <label for="text">Nome do Autor</label>
+        <input type="text" id="autor" placeholder="Digite o nome do autor">
+    </div>
+    <div class="selecao-livro">
+        <label for="text">Defina o status</label>
+        <select id="status">
+            <option value="" selected disabled></option>
+            <option value="disponivel">Disponível</option>
+            <option value="emprestado">Emprestado</option>
+        </select>
+    </div>
+    <button onclick="cadastroDeLivros()">Cadastrar</button>
+    <div class="livros-cadastrados"></div>
+
+    <!-- ------------------------------------------------------------------------------------------ -->
+    <h2>Pedidos de pizza Exercicio 04</h2>
+    <div class="nome-cliente">
+        <label for="text">Nome do cliente</label>
+        <input type="text" id="cliente" placeholder="Digite o seu nome">
+    </div>
+    <div class="selecao-sabor">
+        <label for="text">Escolha um sabor</label>
+        <select id="sabor">
+            <option value="" selected disabled></option>
+            <option value="calabresa">Calabresa</option>
+            <option value="frango">Frango</option>
+            <option value="milho">Milho</option>
+            <option value="portuguesa">Portuguesa</option>
+            <option value="file">Filé</option>
+            <option value="coracao">Coração</option>
+        </select>
+    </div>
+    <div class="quantidade-pizza">
+        <label for="text">Escolha a quantidade</label>
+        <input type="number" id="quantidadepizzas" placeholder="Informe a quantidade">
+    </div>
+    <button onclick="adcionarPedido()">Adcionar Pedido</button>
+    <div class="pedidios-feitos"></div>
+    <!-- ----------------------------------------------------------------------------------------- -->
+    <h2>Ranking de jogadores Exercicio 05</h2>
+    <div class="nome-jogador">
+        <label for="text">Nome do jogador</label>
+        <input type="text" id="jogador" placeholder="Digite o nome do jogador">
+    </div>
+    <div class="pontuacao-jogador">
+        <label for="text">Pontuação do jogador</label>
+        <input type="number" id="pontos">
+    </div>
+    <button onclick="adcionarRanking()">Adcionar ao Ranking</button>
+
+    <div class="ranking"></div>
+
+    <script src="assets/js/exercicios-final-de-semana.js"></script>
+</body>
+</html>

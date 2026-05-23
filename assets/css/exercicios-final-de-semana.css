@@ -1,0 +1,276 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    padding: 30px;
+    color: #f5f5f5;
+    background: linear-gradient(135deg, #141e30, #243b55);
+}
+
+h2 {
+    text-align: center;
+    margin: 35px 0 20px;
+    font-size: 28px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+.nome-prato,
+.preco-prato,
+.selecione-prato,
+.nome-pessoa-digitado,
+.campo-texto,
+.nome-livro,
+.nome-autor,
+.selecao-livro,
+.nome-cliente,
+.selecao-sabor,
+.quantidade-pizza,
+.nome-jogador,
+.pontuacao-jogador {
+    max-width: 500px;
+    margin: 0 auto 14px;
+}
+
+input,
+select,
+textarea,
+button {
+    width: 100%;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+input,
+select,
+textarea {
+    padding: 13px;
+    border: 2px solid transparent;
+    outline: none;
+    background: #fff;
+    transition: 0.3s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #00c6ff;
+    box-shadow: 0 0 12px rgba(0, 198, 255, 0.5);
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    max-width: 500px;
+    display: block;
+    margin: 18px auto 35px;
+    padding: 14px;
+    border: none;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 114, 255, 0.4);
+}
+
+button:active {
+    background: linear-gradient(135deg, #ff512f, #dd2476);
+    transform: scale(0.97);
+}
+
+.cardapio-pronto,
+.publicadas,
+.livros-cadastrados,
+.pedidios-feitos,
+.ranking {
+    max-width: 850px;
+    margin: 0 auto;
+    display: grid;
+    gap: 18px;
+}
+
+.cardapio,
+.texto-publicado,
+.biblioteca-atualizada,
+.pedidos-realizados,
+.atualizacao {
+    color: #222;
+    padding: 22px;
+    border-radius: 16px;
+    border-left: 8px solid #00c6ff;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+    transition: 0.3s;
+}
+
+.cardapio,
+.texto-publicado,
+.biblioteca-atualizada,
+.atualizacao {
+    background: #fff;
+}
+
+.cardapio:hover,
+.texto-publicado:hover,
+.biblioteca-atualizada:hover,
+.pedidos-realizados:hover,
+.atualizacao:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+.cardapio h3,
+.texto-publicado h3,
+.biblioteca-atualizada h3,
+.pedidos-realizados h3,
+.atualizacao h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.cardapio p,
+.texto-publicado p,
+.pedidos-realizados p {
+    margin-top: 8px;
+    line-height: 1.5;
+}
+
+.preco {
+    color: #0a8f3c;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.lanche {
+    border-left-color: #ff9800;
+}
+
+.bebida {
+    border-left-color: #2196f3;
+}
+
+.sobremesa {
+    border-left-color: #e91e63;
+}
+
+.texto-publicado {
+    border-left-color: #9c27b0;
+}
+
+.texto-publicado p:last-child,
+.pedidos-realizados p {
+    font-size: 14px;
+    color: #666;
+    font-style: italic;
+}
+
+.disponivel {
+    border-left-color: #16a34a;
+    background: #59f299;
+}
+
+.emprestado {
+    border-left-color: #dc2626;
+    background: #e96a73;
+}
+
+.botao-status {
+    margin-top: 12px;
+    padding: 10px 16px;
+    background: #222;
+}
+
+.botao-status:hover {
+    background: #444;
+    transform: scale(1.03);
+}
+
+.botao-status:active {
+    background: #0072ff;
+    transform: scale(0.97);
+}
+
+.pedidos-realizados {
+    background: #fff8e7;
+    color: #2b1a00;
+    border-radius: 4px;
+    border-left-color: #f59e0b;
+    font-family: "Courier New", monospace;
+}
+
+.pedidos-realizados::before {
+    content: "COMANDA";
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 14px;
+    padding-bottom: 10px;
+    border-bottom: 2px dashed #c084fc;
+}
+
+.pedidos-realizados input[type="checkbox"] {
+    width: auto;
+    transform: scale(1.4);
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.pedido-grande {
+    border-left-color: #dc2626;
+    background: #fff1f2;
+}
+
+.pedido-grande::before {
+    content: "COMANDA - PEDIDO GRANDE";
+    color: #991b1b;
+}
+
+.pedido-entregue {
+    opacity: 0.75;
+    background: #dcfce7;
+    border-left-color: #16a34a;
+}
+
+.pedido-entregue::before {
+    content: "COMANDA - ENTREGUE";
+    color: #166534;
+}
+
+.pedido-entregue h3,
+.pedido-entregue p {
+    text-decoration: line-through;
+}
+
+.atualizacao {
+    border-left-color: #64748b;
+}
+
+.atualizacao:first-child {
+    background: linear-gradient(135deg, #fff7cc, #ffffff);
+    border-left-color: #facc15;
+}
+
+.atualizacao:first-child h3:first-child {
+    color: #b45309;
+    font-size: 24px;
+}
+
+.pontuacao-alta {
+    border-right: 8px solid #22c55e;
+}
