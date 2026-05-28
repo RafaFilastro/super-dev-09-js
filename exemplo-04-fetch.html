@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Comunicação com back-end</h1>
+
+    <button onclick="cadastrarEmpresa()">Cadastrar Empresa</button>
+    <button onclick="listarEmpresas()">Listar Empresa</button>
+    <button onclick="editarEmpresaPorId()">Editar Empresa</button>
+    <button onclick="apagarEmpresa()">Apagar Empresa</button>
+    <button onclick="consultarEmpresaPorId()">Consultar Empresa por ID</button>
+
+    <div>
+        <label>Empresas</label>
+        <div>
+            <textarea id="empresas" cols="100" rows="20"></textarea>
+        </div>
+    </div>
+
+    <script src="assets/js/exemplo-04-fetch.js"></script>
+</body>
+</html>
